@@ -10,7 +10,7 @@ app.get('/productos', (req,res) => {
     productos.getAll().then(allProducts => res.send(allProducts));
 });
 
-app.get('/productosrandom', async (req,res) => {
+app.get('/productorandom', async (req,res) => {
     const productos = new contenedor('productos.txt');
 
     const allProducts = await productos.getAll();
